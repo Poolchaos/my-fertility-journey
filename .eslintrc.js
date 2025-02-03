@@ -24,6 +24,8 @@ module.exports = {
     'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
     '@typescript-eslint/explicit-function-return-type': 'off',
     quotes: ['error', 'single'],
+    '@typescript-eslint/no-require-imports': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
   settings: {
     react: {

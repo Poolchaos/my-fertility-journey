@@ -1,0 +1,307 @@
+{
+	"*": {
+		"style": {
+			"--tw-border-spacing-x": 0,
+			"--tw-border-spacing-y": 0,
+			"--tw-translate-x": 0,
+			"--tw-translate-y": 0,
+			"--tw-rotate": 0,
+			"--tw-skew-x": 0,
+			"--tw-skew-y": 0,
+			"--tw-scale-x": 1,
+			"--tw-scale-y": 1,
+			"--tw-pan-x": "",
+			"--tw-pan-y": "",
+			"--tw-pinch-zoom": "",
+			"--tw-scroll-snap-strictness": "proximity",
+			"--tw-gradient-from-position": "",
+			"--tw-gradient-via-position": "",
+			"--tw-gradient-to-position": "",
+			"--tw-ordinal": "",
+			"--tw-slashed-zero": "",
+			"--tw-numeric-figure": "",
+			"--tw-numeric-spacing": "",
+			"--tw-numeric-fraction": "",
+			"--tw-ring-inset": "",
+			"--tw-ring-offset-width": 0,
+			"--tw-ring-offset-color": "#fff",
+			"--tw-ring-color": "rgb(59 130 246 / 0.5)",
+			"--tw-ring-offset-shadow": "0 0 #0000",
+			"--tw-ring-shadow": "0 0 #0000",
+			"--tw-shadow": "0 0 #0000",
+			"--tw-shadow-colored": "0 0 #0000",
+			"--tw-blur": "",
+			"--tw-brightness": "",
+			"--tw-contrast": "",
+			"--tw-grayscale": "",
+			"--tw-hue-rotate": "",
+			"--tw-invert": "",
+			"--tw-saturate": "",
+			"--tw-sepia": "",
+			"--tw-drop-shadow": "",
+			"--tw-backdrop-blur": "",
+			"--tw-backdrop-brightness": "",
+			"--tw-backdrop-contrast": "",
+			"--tw-backdrop-grayscale": "",
+			"--tw-backdrop-hue-rotate": "",
+			"--tw-backdrop-invert": "",
+			"--tw-backdrop-opacity": "",
+			"--tw-backdrop-saturate": "",
+			"--tw-backdrop-sepia": "",
+			"--tw-contain-size": "",
+			"--tw-contain-layout": "",
+			"--tw-contain-paint": "",
+			"--tw-contain-style": ""
+		}
+	},
+	"::before": {
+		"style": {
+			"--tw-border-spacing-x": 0,
+			"--tw-border-spacing-y": 0,
+			"--tw-translate-x": 0,
+			"--tw-translate-y": 0,
+			"--tw-rotate": 0,
+			"--tw-skew-x": 0,
+			"--tw-skew-y": 0,
+			"--tw-scale-x": 1,
+			"--tw-scale-y": 1,
+			"--tw-pan-x": "",
+			"--tw-pan-y": "",
+			"--tw-pinch-zoom": "",
+			"--tw-scroll-snap-strictness": "proximity",
+			"--tw-gradient-from-position": "",
+			"--tw-gradient-via-position": "",
+			"--tw-gradient-to-position": "",
+			"--tw-ordinal": "",
+			"--tw-slashed-zero": "",
+			"--tw-numeric-figure": "",
+			"--tw-numeric-spacing": "",
+			"--tw-numeric-fraction": "",
+			"--tw-ring-inset": "",
+			"--tw-ring-offset-width": 0,
+			"--tw-ring-offset-color": "#fff",
+			"--tw-ring-color": "rgb(59 130 246 / 0.5)",
+			"--tw-ring-offset-shadow": "0 0 #0000",
+			"--tw-ring-shadow": "0 0 #0000",
+			"--tw-shadow": "0 0 #0000",
+			"--tw-shadow-colored": "0 0 #0000",
+			"--tw-blur": "",
+			"--tw-brightness": "",
+			"--tw-contrast": "",
+			"--tw-grayscale": "",
+			"--tw-hue-rotate": "",
+			"--tw-invert": "",
+			"--tw-saturate": "",
+			"--tw-sepia": "",
+			"--tw-drop-shadow": "",
+			"--tw-backdrop-blur": "",
+			"--tw-backdrop-brightness": "",
+			"--tw-backdrop-contrast": "",
+			"--tw-backdrop-grayscale": "",
+			"--tw-backdrop-hue-rotate": "",
+			"--tw-backdrop-invert": "",
+			"--tw-backdrop-opacity": "",
+			"--tw-backdrop-saturate": "",
+			"--tw-backdrop-sepia": "",
+			"--tw-contain-size": "",
+			"--tw-contain-layout": "",
+			"--tw-contain-paint": "",
+			"--tw-contain-style": ""
+		}
+	},
+	"::after": {
+		"style": {
+			"--tw-border-spacing-x": 0,
+			"--tw-border-spacing-y": 0,
+			"--tw-translate-x": 0,
+			"--tw-translate-y": 0,
+			"--tw-rotate": 0,
+			"--tw-skew-x": 0,
+			"--tw-skew-y": 0,
+			"--tw-scale-x": 1,
+			"--tw-scale-y": 1,
+			"--tw-pan-x": "",
+			"--tw-pan-y": "",
+			"--tw-pinch-zoom": "",
+			"--tw-scroll-snap-strictness": "proximity",
+			"--tw-gradient-from-position": "",
+			"--tw-gradient-via-position": "",
+			"--tw-gradient-to-position": "",
+			"--tw-ordinal": "",
+			"--tw-slashed-zero": "",
+			"--tw-numeric-figure": "",
+			"--tw-numeric-spacing": "",
+			"--tw-numeric-fraction": "",
+			"--tw-ring-inset": "",
+			"--tw-ring-offset-width": 0,
+			"--tw-ring-offset-color": "#fff",
+			"--tw-ring-color": "rgb(59 130 246 / 0.5)",
+			"--tw-ring-offset-shadow": "0 0 #0000",
+			"--tw-ring-shadow": "0 0 #0000",
+			"--tw-shadow": "0 0 #0000",
+			"--tw-shadow-colored": "0 0 #0000",
+			"--tw-blur": "",
+			"--tw-brightness": "",
+			"--tw-contrast": "",
+			"--tw-grayscale": "",
+			"--tw-hue-rotate": "",
+			"--tw-invert": "",
+			"--tw-saturate": "",
+			"--tw-sepia": "",
+			"--tw-drop-shadow": "",
+			"--tw-backdrop-blur": "",
+			"--tw-backdrop-brightness": "",
+			"--tw-backdrop-contrast": "",
+			"--tw-backdrop-grayscale": "",
+			"--tw-backdrop-hue-rotate": "",
+			"--tw-backdrop-invert": "",
+			"--tw-backdrop-opacity": "",
+			"--tw-backdrop-saturate": "",
+			"--tw-backdrop-sepia": "",
+			"--tw-contain-size": "",
+			"--tw-contain-layout": "",
+			"--tw-contain-paint": "",
+			"--tw-contain-style": ""
+		}
+	},
+	"::backdrop": {
+		"style": {
+			"--tw-border-spacing-x": 0,
+			"--tw-border-spacing-y": 0,
+			"--tw-translate-x": 0,
+			"--tw-translate-y": 0,
+			"--tw-rotate": 0,
+			"--tw-skew-x": 0,
+			"--tw-skew-y": 0,
+			"--tw-scale-x": 1,
+			"--tw-scale-y": 1,
+			"--tw-pan-x": "",
+			"--tw-pan-y": "",
+			"--tw-pinch-zoom": "",
+			"--tw-scroll-snap-strictness": "proximity",
+			"--tw-gradient-from-position": "",
+			"--tw-gradient-via-position": "",
+			"--tw-gradient-to-position": "",
+			"--tw-ordinal": "",
+			"--tw-slashed-zero": "",
+			"--tw-numeric-figure": "",
+			"--tw-numeric-spacing": "",
+			"--tw-numeric-fraction": "",
+			"--tw-ring-inset": "",
+			"--tw-ring-offset-width": 0,
+			"--tw-ring-offset-color": "#fff",
+			"--tw-ring-color": "rgb(59 130 246 / 0.5)",
+			"--tw-ring-offset-shadow": "0 0 #0000",
+			"--tw-ring-shadow": "0 0 #0000",
+			"--tw-shadow": "0 0 #0000",
+			"--tw-shadow-colored": "0 0 #0000",
+			"--tw-blur": "",
+			"--tw-brightness": "",
+			"--tw-contrast": "",
+			"--tw-grayscale": "",
+			"--tw-hue-rotate": "",
+			"--tw-invert": "",
+			"--tw-saturate": "",
+			"--tw-sepia": "",
+			"--tw-drop-shadow": "",
+			"--tw-backdrop-blur": "",
+			"--tw-backdrop-brightness": "",
+			"--tw-backdrop-contrast": "",
+			"--tw-backdrop-grayscale": "",
+			"--tw-backdrop-hue-rotate": "",
+			"--tw-backdrop-invert": "",
+			"--tw-backdrop-opacity": "",
+			"--tw-backdrop-saturate": "",
+			"--tw-backdrop-sepia": "",
+			"--tw-contain-size": "",
+			"--tw-contain-layout": "",
+			"--tw-contain-paint": "",
+			"--tw-contain-style": ""
+		}
+	},
+	"container": {
+		"style": {
+			"maxWidth": 1536
+		},
+		"media": "(min-width: 1536px)"
+	},
+	"flex": {
+		"style": {
+			"display": "flex"
+		}
+	},
+	"h-full": {
+		"style": {
+			"height": "100%"
+		}
+	},
+	"w-1/5": {
+		"style": {
+			"width": "20%"
+		}
+	},
+	"w-full": {
+		"style": {
+			"width": "100%"
+		}
+	},
+	"flex-1": {
+		"style": {
+			"flexGrow": 1,
+			"flexShrink": 1,
+			"flexBasis": "0%"
+		}
+	},
+	"flex-row": {
+		"style": {
+			"flexDirection": "row"
+		}
+	},
+	"border": {
+		"style": {
+			"borderTopWidth": 1,
+			"borderRightWidth": 1,
+			"borderBottomWidth": 1,
+			"borderLeftWidth": 1
+		}
+	},
+	"border-r": {
+		"style": {
+			"borderRightWidth": 1
+		}
+	},
+	"border-gray-300": {
+		"style": {
+			"--tw-border-opacity": 1,
+			"borderTopColor": "rgb(209 213 219 / var(--tw-border-opacity, 1))",
+			"borderRightColor": "rgb(209 213 219 / var(--tw-border-opacity, 1))",
+			"borderBottomColor": "rgb(209 213 219 / var(--tw-border-opacity, 1))",
+			"borderLeftColor": "rgb(209 213 219 / var(--tw-border-opacity, 1))"
+		}
+	},
+	"bg-white": {
+		"style": {
+			"--tw-bg-opacity": 1,
+			"backgroundColor": "rgb(255 255 255 / var(--tw-bg-opacity, 1))"
+		}
+	},
+	"p-4": {
+		"style": {
+			"paddingTop": 16,
+			"paddingRight": 16,
+			"paddingBottom": 16,
+			"paddingLeft": 16
+		}
+	},
+	"text-lg": {
+		"style": {
+			"fontSize": 18,
+			"lineHeight": 28
+		}
+	},
+	"font-bold": {
+		"style": {
+			"fontWeight": "700"
+		}
+	}
+}

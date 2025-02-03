@@ -1,39 +1,44 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
+import { View, Text, useWindowDimensions, Appearance } from 'react-native';
 import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
+import { DefaultTheme, ThemeProvider } from '@react-navigation/native';
+import { create } from 'tailwind-rn';
+import utilities from '../tailwind.json';
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
+  // ✅ Move Hooks to the top level
+  const dimensions = useWindowDimensions();
+  const colorScheme = Appearance.getColorScheme() || 'light';
 
-  useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
+  // ✅ Use environment as a plain object (not a function call inside render)
+  const environment = {
+    orientation:
+      dimensions.width > dimensions.height
+        ? ('landscape' as const)
+        : ('portrait' as const),
+    colorScheme,
+    reduceMotion: false,
+    width: dimensions.width,
+    height: dimensions.height,
+  };
 
-  if (!loaded) {
-    return null;
-  }
+  // ✅ Tailwind function must be inside the component
+  const tailwind = create(utilities, environment);
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
+    <ThemeProvider value={DefaultTheme}>
+      <View style={tailwind('flex-row h-full w-full bg-white')}>
+        {/* Sidebar */}
+        <View
+          style={tailwind('w-1/5 h-full bg-white border-r border-gray-300')}
+        >
+          <Text style={tailwind('text-lg font-bold p-4')}>Sidebar</Text>
+        </View>
+
+        {/* Main Content */}
+        <View style={tailwind('flex-1 p-4')}>
+          <Stack screenOptions={{ headerShown: false }} />
+        </View>
+      </View>
     </ThemeProvider>
   );
 }

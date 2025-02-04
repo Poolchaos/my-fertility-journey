@@ -10,18 +10,8 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={DefaultTheme}>
       <View style={tailwind('flex-row h-full w-full bg-white')}>
-        {/* Sidebar */}
-        <View
-          style={[
-            tailwind(`h-full bg-white border-r w-280`),
-            {
-              borderColor:
-                tailwind('border-customBorder')?.borderColor || '#e5e8eb',
-            },
-          ]}
-        >
-          <Sidebar />
-        </View>
+        {/* Sidebar handles its own state */}
+        <Sidebar />
 
         {/* Main Content */}
         <View style={tailwind('flex-1')}>

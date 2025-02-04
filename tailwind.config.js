@@ -20,11 +20,14 @@ module.exports = {
         34: '34px',
       },
       width: {
+        30: '30px',
         88: '88px',
         280: '280px',
       },
       spacing: {
+        5: '5px',
         7: '7px',
+        15: '15px',
         40: '40px',
       },
       boxShadow: {
@@ -56,6 +59,9 @@ module.exports = {
     },
     {
       pattern: /(w|h)-[0-9]+/,
+    },
+    {
+      pattern: /justify-.*/,
     },
   ],
 };

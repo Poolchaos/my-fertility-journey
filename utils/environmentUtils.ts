@@ -1,6 +1,7 @@
 import { useWindowDimensions, Appearance } from 'react-native';
 import { create } from 'tailwind-rn';
 import utilities from '../tailwind.json';
+import { breakpoints } from '../constants/breakpoints';
 
 export const UseEnvironment = () => {
   const dimensions = useWindowDimensions();
@@ -19,5 +20,5 @@ export const UseEnvironment = () => {
 
   const tailwind = create(utilities, environment);
 
-  return { environment, tailwind };
+  return { environment, tailwind, breakpoints }; // ✅ Now returning breakpoints
 };

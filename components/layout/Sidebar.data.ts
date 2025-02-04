@@ -26,7 +26,7 @@ export const menuItemsData: MenuItem[] = [
     name: 'Manage Users',
     path: '/users',
     icon: UsersIcon,
-    width: 22,
+    width: 28,
   },
   {
     name: 'Manage Patients',
@@ -37,6 +37,6 @@ export const menuItemsData: MenuItem[] = [
     name: 'Logs',
     path: '/logs',
     icon: DocumentIcon,
-    width: 15,
+    width: 17,
   },
 ];

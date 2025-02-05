@@ -1,6 +1,27 @@
 import { UseEnvironment } from '../../utils/environmentUtils';
 
-export const getMenuItemStyles = (isActive: boolean) => {
+const removeOpacity = (colorString: string | undefined) => {
+  if (
+    colorString &&
+    (colorString.includes('var(--tw-bg-opacity') ||
+      colorString.includes('var(--tw-text-opacity'))
+  ) {
+    return colorString
+      .replace(/\s*\/ var\(--tw-bg-opacity,\s*1\)/, '')
+      .replace(/\s*\/ var\(--tw-text-opacity,\s*1\)/, '');
+  }
+  return colorString;
+};
+
+export const getstyle = (className: string) => {
+  const { tailwind } = UseEnvironment();
+  const style = tailwind(className);
+  return removeOpacity(
+    (style.color || style.backgroundColor) as string | undefined
+  );
+};
+
+export const getCustomStyles = (isActive: boolean) => {
   const { tailwind } = UseEnvironment();
 
   if (!tailwind) {
@@ -11,19 +32,6 @@ export const getMenuItemStyles = (isActive: boolean) => {
       iconColor: undefined,
     };
   }
-
-  const removeOpacity = (colorString: string | undefined) => {
-    if (
-      colorString &&
-      (colorString.includes('var(--tw-bg-opacity') ||
-        colorString.includes('var(--tw-text-opacity'))
-    ) {
-      return colorString
-        .replace(/\s*\/ var\(--tw-bg-opacity,\s*1\)/, '')
-        .replace(/\s*\/ var\(--tw-text-opacity,\s*1\)/, '');
-    }
-    return colorString;
-  };
 
   const activeStyles = tailwind('bg-customActive text-customActiveText');
   const inactiveTextStyles = tailwind('text-customInactiveText');

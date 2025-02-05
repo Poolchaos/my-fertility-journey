@@ -14,7 +14,9 @@ export default function RootLayout() {
         <Sidebar />
 
         {/* Main Content */}
-        <View style={tailwind('flex-1')}>
+        <View
+          style={[tailwind('flex-1 overflow-hidden'), { minWidth: '235px' }]}
+        >
           <Stack screenOptions={{ headerShown: false }} />
         </View>
       </View>

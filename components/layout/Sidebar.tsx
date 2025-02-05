@@ -5,7 +5,7 @@ import { UseEnvironment } from '../../utils/environmentUtils';
 import SidebarItem from './SidebarItem';
 import SidebarLogo from './SidebarLogo';
 import { MenuItem, menuItemsData } from './Sidebar.data';
-import { getMenuItemStyles } from './Sidebar.styles';
+import { getCustomStyles } from './styles';
 
 import closeSquare from '../../assets/images/close-square.svg';
 import caretRight from '../../assets/images/caret-right.svg';
@@ -69,7 +69,7 @@ const Sidebar: React.FC = () => {
         {/* Sidebar Items */}
         {menuItemsData.map((item: MenuItem) => {
           const isActive = pathname === item.path;
-          const styles = getMenuItemStyles(isActive);
+          const styles = getCustomStyles(isActive);
 
           return (
             <SidebarItem

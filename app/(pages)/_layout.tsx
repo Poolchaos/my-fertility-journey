@@ -1,13 +1,17 @@
-import { View, Text, SafeAreaView } from 'react-native';
+import React from 'react';
+import { View, SafeAreaView } from 'react-native';
 import { UseEnvironment } from '../../utils/environmentUtils';
+import Navbar from '../../components/Navbar';
 
-export default function RootLayout() {
+const RootLayout: React.FC = () => {
   const { tailwind } = UseEnvironment();
+
   return (
-    <SafeAreaView style={tailwind('flex-1')}>
-      <View style={tailwind('p-4')}>
-        <Text style={tailwind('text-lg font-bold')}>Page content here</Text>
-      </View>
+    <SafeAreaView style={tailwind('flex-1 bg-white')}>
+      <Navbar />
+      <View style={tailwind('p-4')}>{/* Page content here */}</View>
     </SafeAreaView>
   );
-}
+};
+
+export default RootLayout;

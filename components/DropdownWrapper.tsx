@@ -29,7 +29,7 @@ const DropdownWrapper: React.FC<DropdownWrapperProps> = ({
               ? `${narrowPositionFromTop}px`
               : `calc(100% + ${positionFromTop / 2}px)`,
           backgroundColor: getStyle('bg-white'),
-          boxShadow: '0px 0px 6px rgba(0, 0, 0, 0.2)',
+          boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.2)',
           right: width < maxWidth ? 'unset' : '0',
           left: width < maxWidth ? '0' : 'unset',
         },

@@ -44,7 +44,7 @@ const Sidebar: React.FC = () => {
               ),
       };
     });
-  }, [isProfileOpen]);
+  }, [isProfileOpen, isNotificationsOpen]);
 
   return (
     <View
@@ -106,7 +106,8 @@ const Sidebar: React.FC = () => {
             <View style={tailwind('w-30 items-center')}>
               <Image
                 source={MedicalIcon as any}
-                style={{ width: 22, height: 22, tintColor: '#578388' }}
+                style={{ width: 22, height: 22 }}
+                tintColor="#578388"
               />
             </View>
             <Text

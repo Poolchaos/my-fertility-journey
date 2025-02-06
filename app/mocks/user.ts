@@ -1,6 +1,6 @@
 const mockUser = {
   initials: 'AS',
-  fullName: 'Alex Smith',
+  fullName: 'Adrian Stefan',
 };
 
 export default mockUser;

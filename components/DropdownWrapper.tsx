@@ -22,7 +22,7 @@ const DropdownWrapper: React.FC<DropdownWrapperProps> = ({
   return (
     <View
       style={[
-        tailwind('absolute right-0 w-80 rounded-lg p-4 z-50 '),
+        tailwind(`absolute right-0 w-80 rounded-lg z-50 `),
         {
           top:
             width < maxWidth

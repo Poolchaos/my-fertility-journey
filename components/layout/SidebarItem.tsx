@@ -20,6 +20,7 @@ const SidebarItem: React.FC<Props> = ({
   iconColor,
   isCollapsed,
 }) => {
+  // ✅ Ensure hooks are always called first
   const { tailwind } = UseEnvironment();
 
   return (

@@ -9,6 +9,10 @@ export interface MenuItem {
   path: string;
   icon: any;
   width?: number;
+  isVisible?: boolean;
+  backgroundColor?: string;
+  color?: string;
+  iconColor?: string;
 }
 
 export const menuItemsData: MenuItem[] = [
@@ -27,6 +31,11 @@ export const menuItemsData: MenuItem[] = [
     path: '/users',
     icon: UsersIcon,
     width: 28,
+  },
+  {
+    name: 'Manage Practices',
+    path: '/patients',
+    icon: MedicalIcon,
   },
   {
     name: 'Manage Patients',

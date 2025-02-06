@@ -75,14 +75,49 @@ const ProfileDropdown: React.FC = () => {
             positionFromTop={60}
             narrowPositionFromTop={85}
           >
-            <TouchableOpacity style={tailwind('mb-2')}>
-              <Text style={tailwind('text-gray-700 font-bold')}>Profile</Text>
+            <View
+              style={[
+                tailwind('px-35 py-28'),
+                { borderBottomWidth: 2, borderBottomColor: '#f2f2f2' },
+              ]}
+            >
+              <Text
+                style={[
+                  tailwind('font-bold'),
+                  { color: '#616161', fontSize: 20 },
+                ]}
+              >
+                Adrian Stefan
+              </Text>
+              <Text
+                style={[
+                  tailwind('mt-2'),
+                  { color: '#adadad', fontSize: 18, lineHeight: 14 },
+                ]}
+              >
+                adrian.stefan@example.com
+              </Text>
+            </View>
+
+            <TouchableOpacity
+              style={[
+                tailwind('px-6 py-3 m-13 rounded-lg'),
+                { backgroundColor: '#f8f8f8' },
+              ]}
+            >
+              <Text style={{ color: '#616161', fontSize: 18 }}>Profile</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={tailwind('mb-2')}>
-              <Text style={tailwind('text-gray-700 font-bold')}>Settings</Text>
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Text style={tailwind('text-red-500 font-bold')}>Logout</Text>
+
+            <TouchableOpacity
+              style={[
+                tailwind('px-9 py-25'),
+                {
+                  borderTopWidth: 2,
+                  borderTopColor: '#f2f2f2',
+                },
+              ]}
+            >
+              <Text style={{ color: '#616161', fontSize: 18 }}>Logout</Text>
             </TouchableOpacity>
           </DropdownWrapper>
         )}

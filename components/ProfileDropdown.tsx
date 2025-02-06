@@ -21,11 +21,14 @@ const ProfileDropdown: React.FC = () => {
   const widthSwitch = 390;
 
   return (
-    <View style={{ position: width < widthSwitch ? 'static' : 'relative' }}>
+    <View style={{ position: 'static' }}>
       {/* Profile Section */}
       <TouchableOpacity
         onPress={() => setIsOpen(!isOpen)}
-        style={tailwind('flex-row items-center')}
+        style={[
+          tailwind('flex-row items-center'),
+          { position: width < widthSwitch ? 'static' : 'relative' },
+        ]}
       >
         <View
           style={[
@@ -68,7 +71,7 @@ const ProfileDropdown: React.FC = () => {
             isVisible={isOpen}
             maxWidth={widthSwitch}
             positionFromTop={60}
-            narrowPositionFromTop={71}
+            narrowPositionFromTop={85}
           >
             <TouchableOpacity style={tailwind('mb-2')}>
               <Text style={tailwind('text-gray-700 font-bold')}>Profile</Text>

@@ -1,10 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
 import { UseEnvironment } from '../utils/environmentUtils';
-import { getstyle } from './layout/styles';
+import { getStyle } from './layout/styles';
 
 interface DropdownWrapperProps {
-  isVisible: boolean;
   children: React.ReactNode;
   maxWidth: number;
   positionFromTop: number;
@@ -12,7 +11,6 @@ interface DropdownWrapperProps {
 }
 
 const DropdownWrapper: React.FC<DropdownWrapperProps> = ({
-  isVisible,
   children,
   maxWidth,
   positionFromTop,
@@ -20,8 +18,6 @@ const DropdownWrapper: React.FC<DropdownWrapperProps> = ({
 }) => {
   const { environment, tailwind } = UseEnvironment();
   const { width } = environment;
-
-  if (!isVisible) return null;
 
   return (
     <View
@@ -32,7 +28,7 @@ const DropdownWrapper: React.FC<DropdownWrapperProps> = ({
             width < maxWidth
               ? `${narrowPositionFromTop}px`
               : `calc(100% + ${positionFromTop / 2}px)`,
-          backgroundColor: getstyle('bg-white'),
+          backgroundColor: getStyle('bg-white'),
           boxShadow: '0px 0px 6px rgba(0, 0, 0, 0.2)',
           right: width < maxWidth ? 'unset' : '0',
           left: width < maxWidth ? '0' : 'unset',

@@ -20,5 +20,5 @@ export const UseEnvironment = () => {
 
   const tailwind = create(utilities, environment);
 
-  return { environment, tailwind, breakpoints }; // ✅ Now returning breakpoints
+  return { environment, tailwind, breakpoints };
 };

@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { UseEnvironment } from '../utils/environmentUtils';
 import mockUser from '../app/mocks/user';
-import { getstyle } from './layout/styles';
-
+import { getStyle } from './layout/styles';
 import CaretUp from '../assets/images/caret-up.svg';
 import CaretDown from '../assets/images/caret-down.svg';
 import DropdownWrapper from './DropdownWrapper';
+import { useDropdown } from '../context/DropdownProvider';
 
 interface User {
   initials: string;
@@ -15,38 +15,41 @@ interface User {
 
 const ProfileDropdown: React.FC = () => {
   const { environment, tailwind } = UseEnvironment();
-  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [user] = useState<User>(mockUser);
+
+  const { activeDropdown, toggleDropdown } = useDropdown();
   const { width } = environment;
   const widthSwitch = 390;
 
+  const isOpen = activeDropdown === 'profile';
+
   return (
-    <View style={{ position: 'static' }}>
-      {/* Profile Section */}
+    <View style={[tailwind('flex flex-row'), { position: 'static' }]}>
+      <View
+        style={[
+          tailwind(
+            'w-15 h-15 rounded-full flex items-center justify-center mx-10 p-20'
+          ),
+          { backgroundColor: getStyle('bg-customActive') },
+        ]}
+      >
+        <Text
+          style={[
+            tailwind(' font-bold text-lg text-xs'),
+            { color: getStyle('text-customActiveText') },
+          ]}
+        >
+          {user.initials}
+        </Text>
+      </View>
+
       <TouchableOpacity
-        onPress={() => setIsOpen(!isOpen)}
+        onPress={() => toggleDropdown('profile')}
         style={[
           tailwind('flex-row items-center'),
           { position: width < widthSwitch ? 'static' : 'relative' },
         ]}
       >
-        <View
-          style={[
-            tailwind(
-              'w-15 h-15 rounded-full flex items-center justify-center mx-10 p-20'
-            ),
-            { backgroundColor: getstyle('bg-customActive') },
-          ]}
-        >
-          <Text
-            style={[
-              tailwind(' font-bold text-lg text-xs'),
-              { color: getstyle('text-customActiveText') },
-            ]}
-          >
-            {user.initials}
-          </Text>
-        </View>
         <View
           style={tailwind('h-15 rounded-full flex items-center justify-center')}
         >
@@ -62,13 +65,12 @@ const ProfileDropdown: React.FC = () => {
           <Image
             source={isOpen ? (CaretUp as any) : (CaretDown as any)}
             style={{ width: 22, height: 22 }}
-            tintColor={getstyle('text-customIcon')}
+            tintColor={getStyle('text-customIcon')}
           />
         </View>
 
         {isOpen && (
           <DropdownWrapper
-            isVisible={isOpen}
             maxWidth={widthSwitch}
             positionFromTop={60}
             narrowPositionFromTop={85}

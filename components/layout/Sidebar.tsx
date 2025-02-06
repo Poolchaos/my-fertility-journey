@@ -37,6 +37,7 @@ const Sidebar: React.FC = () => {
           transition: 'width 0.3s ease-in-out',
           zIndex: 50,
           position: 'relative',
+          borderColor: '#e5e8eb',
         },
       ]}
     >

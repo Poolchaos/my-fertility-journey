@@ -1,43 +1,38 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, TouchableOpacity, Text } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { UseEnvironment } from '../utils/environmentUtils';
 import NotificationDropdown from './NotificationDropdown';
 import ProfileDropdown from './ProfileDropdown';
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { getstyle } from './layout/styles';
-console.log(' ::>> FontAwesome >>>>> ', { FontAwesome, FontAwesome5 });
+import { getStyle } from './layout/styles';
+import { useDropdown } from '../context/DropdownProvider';
+
 FontAwesome5.defaultProps.solid = true;
 
 const Navbar: React.FC = () => {
   const { environment, tailwind } = UseEnvironment();
-  const [isNotifOpen, setIsNotifOpen] = useState(false);
-  const { width } = environment;
+  const { activeDropdown, toggleDropdown } = useDropdown();
 
   return (
     <View
       style={[
-        tailwind('flex-row justify-end items-center px-4 py-13'),
-        { backgroundColor: getstyle('bg-white') },
+        tailwind('flex-row justify-end items-center px-4 py-13 z-50'),
+        { backgroundColor: getStyle('bg-white') },
       ]}
     >
+      {/* Notifications */}
       <View
         style={[
           tailwind('z-50'),
-          { position: width < 535 ? 'static' : 'relative' },
+          { position: environment.width < 535 ? 'static' : 'relative' },
         ]}
       >
-        {/* Notifications Icon */}
         <TouchableOpacity
-          onPress={() => setIsNotifOpen(!isNotifOpen)}
+          onPress={() => toggleDropdown('notifications')}
           style={[tailwind('relative mr-4'), { zIndex: 51 }]}
         >
-          <FontAwesome5
-            name="bell"
-            size={15}
-            color="#9d9d9d"
-            backgroundColor="#9d9d9d"
-          />
+          <FontAwesome5 name="bell" size={15} color="#9d9d9d" />
+          {/* Notification Badge */}
           <View
             style={[
               tailwind(
@@ -56,12 +51,13 @@ const Navbar: React.FC = () => {
             </Text>
           </View>
         </TouchableOpacity>
-        {isNotifOpen && <NotificationDropdown isVisible={isNotifOpen} />}
+        {activeDropdown === 'notifications' && <NotificationDropdown />}
       </View>
 
+      {/* Profile Dropdown */}
       <ProfileDropdown />
     </View>
   );
 };
 
-export default Navbar;
+export default React.memo(Navbar);

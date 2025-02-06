@@ -1,33 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useMemo } from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { FontAwesome5, MaterialIcons } from '@expo/vector-icons';
 import { UseEnvironment } from '../utils/environmentUtils';
-import mockNotifications from '../app/mocks/notifications';
 import DropdownWrapper from './DropdownWrapper';
+import mockNotifications from '../app/mocks/notifications';
 
-interface Notification {
-  id: number;
-  title: string;
-  name: string;
-  date: string;
-  image: string;
-}
-
-const NotificationDropdown: React.FC<{ isVisible: boolean }> = ({
-  isVisible,
-}) => {
+const NotificationDropdown: React.FC = () => {
   const { tailwind } = UseEnvironment();
-  const [notifications, setNotifications] = useState<Notification[]>([]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setNotifications(mockNotifications);
-    }, 1000);
-  }, []);
+  const notifications = useMemo(() => mockNotifications, []);
 
   return (
     <DropdownWrapper
-      isVisible={isVisible}
       maxWidth={535}
       positionFromTop={84}
       narrowPositionFromTop={84}
@@ -60,6 +44,7 @@ const NotificationDropdown: React.FC<{ isVisible: boolean }> = ({
           </TouchableOpacity>
         </View>
       ))}
+
       <TouchableOpacity style={tailwind('mt-4 items-center')}>
         <Text style={tailwind('text-customIcon font-bold')}>Clear All</Text>
       </TouchableOpacity>
@@ -67,4 +52,4 @@ const NotificationDropdown: React.FC<{ isVisible: boolean }> = ({
   );
 };
 
-export default NotificationDropdown;
+export default React.memo(NotificationDropdown);

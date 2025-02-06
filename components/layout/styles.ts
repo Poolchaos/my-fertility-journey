@@ -13,7 +13,7 @@ const removeOpacity = (colorString: string | undefined) => {
   return colorString;
 };
 
-export const getstyle = (className: string) => {
+export const getStyle = (className: string) => {
   const { tailwind } = UseEnvironment();
   const style = tailwind(className);
   return removeOpacity(

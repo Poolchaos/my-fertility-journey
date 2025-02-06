@@ -9,7 +9,9 @@ const RootLayout: React.FC = () => {
   return (
     <SafeAreaView style={tailwind('flex-1 bg-white')}>
       <Navbar />
-      <View style={tailwind('p-4')}>{/* Page content here */}</View>
+      <View style={[tailwind('p-4 flex-1'), { backgroundColor: '#fafafa' }]}>
+        {/* Page content here */}
+      </View>
     </SafeAreaView>
   );
 };

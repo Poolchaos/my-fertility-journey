@@ -8,16 +8,35 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "jest --watchAll",
-    "lint": "expo lint"
+    "test": "jest --coverage",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "generate-tailwind": "npx tailwindcss -o tailwind.css && npx tailwind-rn --input tailwind.css --output tailwind.json"
   },
+  "type": "module",
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,ts,tsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**/babel.config.js",
+      "!**/jest.config.js",
+      "!**/app/mocks/*",
+      "!**/constants/*",
+      "!**/styles/*",
+      "!**/utils/*",
+      "!**/components/ui/*"
+    ]
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
     "@react-navigation/bottom-tabs": "^7.2.0",
-    "@react-navigation/native": "^7.0.14",
+    "@testing-library/jest-native": "^5.4.3",
     "expo": "~52.0.28",
     "expo-blur": "~14.0.3",
     "expo-constants": "~17.0.5",
@@ -30,25 +49,60 @@
     "expo-symbols": "~0.2.1",
     "expo-system-ui": "~4.0.7",
     "expo-web-browser": "~14.0.2",
+    "jest": "~29.7.0",
+    "jest-expo": "~52.0.3",
+    "lucide-react-native": "^0.474.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-native": "0.76.6",
     "react-native-gesture-handler": "~2.20.2",
-    "react-native-reanimated": "~3.16.1",
-    "react-native-safe-area-context": "4.12.0",
-    "react-native-screens": "~4.4.0",
+    "react-native-table-component": "^1.2.2",
+    "react-native-tailwindcss": "^1.1.11",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@react-navigation/native": "^7.0.14",
+    "@react-navigation/stack": "^7.1.1",
+    "@testing-library/react-native": "^13.0.1",
     "@types/jest": "^29.5.12",
     "@types/react": "~18.3.12",
+    "@types/react-native-table-component": "^1.2.8",
     "@types/react-test-renderer": "^18.3.0",
-    "jest": "^29.2.1",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
     "jest-expo": "~52.0.3",
+    "lint-staged": "^15.4.3",
+    "postcss": "^8.5.1",
+    "prettier": "^3.4.2",
+    "react-native-gesture-handler": "^2.22.1",
+    "react-native-reanimated": "^3.16.7",
+    "react-native-safe-area-context": "^5.1.0",
+    "react-native-screens": "^4.6.0",
+    "react-native-svg": "^15.11.1",
+    "react-native-vector-icons": "^10.2.0",
     "react-test-renderer": "18.3.1",
-    "typescript": "^5.3.3"
+    "tailwind-rn": "^4.2.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.22.0",
+    "zustand": "^5.0.3"
   },
-  "private": true
+  "private": true,
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
 }

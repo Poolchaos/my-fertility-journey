@@ -1,50 +1,119 @@
-# Welcome to your Expo app 👋
+# My Fertility Journey
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+[![Node Version](https://img.shields.io/badge/node-v22.8.0-brightgreen.svg)](https://nodejs.org/)
+[![npm Version](https://img.shields.io/badge/npm-v10.98.2-blue.svg)](https://www.npmjs.com/)
+[![React Native Version](https://img.shields.io/badge/react_native-v0.76.6-blue.svg)](https://reactnative.dev/)
+[![Expo Version](https://img.shields.io/badge/expo-v52.0.28-blue.svg)](https://expo.dev/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-## Get started
+A **React Native & Expo** project designed to manage fertility tracking, appointments, and patient management.
 
-1. Install dependencies
+## Table of Contents
 
-   ```bash
+- [Installation](#installation)
+- [Usage](#usage)
+- [Design Decisions & Trade-offs](#design-decisions--trade-offs)
+- [Testing](#testing)
+- [Known Issues](#known-issues)
+- [License](#license)
+
+---
+
+## Installation
+
+To install and run **My Fertility Journey** locally, follow these steps:
+
+1. **Clone the repository:**
+
+   ```
+   git clone https://github.com/Poolchaos/my-fertility-journey.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```
+   cd my-fertility-journey
+   ```
+
+3. **Install the required dependencies:**
+
+   ```
    npm install
    ```
 
-2. Start the app
+4. **Run the development server:**
 
-   ```bash
-    npx expo start
+   ```
+   npm run start
    ```
 
-In the output, you'll find options to open the app in a
+5. **Run on different platforms:**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   - **Android:** `npm run android`
+   - **iOS:** `npm run ios` (untested)
+   - **Web:** `npm run web` (untested)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## Usage
 
-When you're ready, run:
+Once the app is running, you can navigate through different sections:
 
-```bash
-npm run reset-project
+- **Dashboard**: Overview of key metrics and patient data.
+- **Patients**: Not content yet.
+- **Users**: Not content yet.
+- **Logs**: Not content yet.
+- **Profile**: Not content yet.
+
+---
+
+## Design Decisions & Trade-offs
+
+### 1. **React Native + Expo**
+
+- **Reasoning**: Expo provides a streamlined workflow for developing, building, and deploying React Native apps with minimal setup.
+- **Trade-offs**: Expo simplifies many processes but can have limitations with native modules compared to pure React Native CLI.
+
+### 2. **State Management with Context API**
+
+- **Reasoning**: The Context API was chosen over Redux or Zustand for simplicity and built-in support.
+- **Trade-offs**: For larger applications, Redux or Zustand may offer better scalability.
+
+### 3. **Navigation with Expo Router**
+
+- **Reasoning**: Expo Router offers a file-based approach to routing, simplifying navigation.
+- **Trade-offs**: This structure might not be as flexible as React Navigation for more complex navigation needs.
+
+### 4. **Tailwind CSS for Styling**
+
+- **Reasoning**: Tailwind was used for rapid development and consistent styling.
+- **Trade-offs**: Tailwind requires preprocessing in React Native (`tailwind-rn`), which has some limitations.
+
+### 5. **Mock API Data Instead of Full API Integration**
+
+- **Reasoning**: Due to time constraints, mock data is imported from constants instead of dynamically fetched.
+- **Trade-offs**: While this provides structure for real API integration, it doesn't simulate network latency or server behavior.
+
+---
+
+## Testing
+
+Unit tests were implemented using **Jest** and **React Native Testing Library**.
+
+To run tests, use:
+
+```
+npm run test
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Current Test Coverage
 
-## Learn more
+- **Navbar Component**: Tested for rendering, dropdown interactions, and snapshot testing.
+- **DashboardWidgets**: Incomplete tests.
+- **NewestPractices**: Incomplete tests.
+- **StatusOverview**: Incomplete tests.
+- **PieChart**: Incomplete tests.
 
-To learn more about developing your project with Expo, look at the following resources:
+## License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -1,0 +1,1146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardWidgets matches snapshot 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "marginLeft": -12,
+      "marginRight": -12,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "marginBottom": 24,
+        "minWidth": 220,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "width": "33.333333%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderBottomLeftRadius": 8,
+            "borderBottomRightRadius": 8,
+            "borderTopLeftRadius": 8,
+            "borderTopRightRadius": 8,
+          },
+          {
+            "backgroundColor": "#fff",
+            "boxShadow": "0px 0px 20px rgba(0, 0, 0, 0.1)",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "display": "flex",
+              "flexDirection": "row",
+            },
+            {
+              "color": "#414141",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            {
+              "flexBasis": "0%",
+              "flexGrow": 1,
+              "flexShrink": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "rgb(107 114 128 / var(--tw-text-opacity, 1))",
+                "fontSize": 14,
+                "lineHeight": 20,
+              }
+            }
+          >
+            Total Practices
+          </Text>
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginBottom": 8,
+                "marginTop": 8,
+              }
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "borderBottomLeftRadius": 9999,
+                    "borderBottomRightRadius": 9999,
+                    "borderTopLeftRadius": 9999,
+                    "borderTopRightRadius": 9999,
+                    "display": "flex",
+                    "height": 24,
+                    "justifyContent": "center",
+                    "marginRight": 4,
+                    "width": 24,
+                  },
+                  {
+                    "backgroundColor": "#E3F8DD",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  {
+                    "testUri": "../../../assets/images/line-chart.svg",
+                  }
+                }
+                style={
+                  {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+                tintColor="#66DA42"
+              />
+            </View>
+            <Text
+              style={
+                {
+                  "fontSize": 12,
+                }
+              }
+            >
+              +15%
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "fontWeight": "700",
+                },
+                {
+                  "fontSize": "30px",
+                },
+              ]
+            }
+          >
+            11
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderBottomLeftRadius": 9999,
+                  "borderBottomRightRadius": 9999,
+                  "borderTopLeftRadius": 9999,
+                  "borderTopRightRadius": 9999,
+                  "display": "flex",
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginRight": 4,
+                  "width": 64,
+                },
+                {
+                  "backgroundColor": "#E4F7F9",
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                {
+                  "testUri": "../../../assets/images/stethoscope.svg",
+                }
+              }
+              style={
+                {
+                  "height": 25,
+                  "width": 25,
+                }
+              }
+              tintColor="#578388"
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "marginBottom": 24,
+        "minWidth": 220,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "width": "33.333333%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderBottomLeftRadius": 8,
+            "borderBottomRightRadius": 8,
+            "borderTopLeftRadius": 8,
+            "borderTopRightRadius": 8,
+          },
+          {
+            "backgroundColor": "#fff",
+            "boxShadow": "0px 0px 20px rgba(0, 0, 0, 0.1)",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "display": "flex",
+              "flexDirection": "row",
+            },
+            {
+              "color": "#414141",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            {
+              "flexBasis": "0%",
+              "flexGrow": 1,
+              "flexShrink": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "rgb(107 114 128 / var(--tw-text-opacity, 1))",
+                "fontSize": 14,
+                "lineHeight": 20,
+              }
+            }
+          >
+            Total Subscribers
+          </Text>
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginBottom": 8,
+                "marginTop": 8,
+              }
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "borderBottomLeftRadius": 9999,
+                    "borderBottomRightRadius": 9999,
+                    "borderTopLeftRadius": 9999,
+                    "borderTopRightRadius": 9999,
+                    "display": "flex",
+                    "height": 24,
+                    "justifyContent": "center",
+                    "marginRight": 4,
+                    "width": 24,
+                  },
+                  {
+                    "backgroundColor": "#E3F8DD",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  {
+                    "testUri": "../../../assets/images/line-chart.svg",
+                  }
+                }
+                style={
+                  {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+                tintColor="#66DA42"
+              />
+            </View>
+            <Text
+              style={
+                {
+                  "fontSize": 12,
+                }
+              }
+            >
+              +15%
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "fontWeight": "700",
+                },
+                {
+                  "fontSize": "30px",
+                },
+              ]
+            }
+          >
+            261
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderBottomLeftRadius": 9999,
+                  "borderBottomRightRadius": 9999,
+                  "borderTopLeftRadius": 9999,
+                  "borderTopRightRadius": 9999,
+                  "display": "flex",
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginRight": 4,
+                  "width": 64,
+                },
+                {
+                  "backgroundColor": "#E4F7F9",
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                {
+                  "testUri": "../../../assets/images/trolley.svg",
+                }
+              }
+              style={
+                {
+                  "height": 25,
+                  "width": 25,
+                }
+              }
+              tintColor="#578388"
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "marginBottom": 24,
+        "minWidth": 220,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "width": "33.333333%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderBottomLeftRadius": 8,
+            "borderBottomRightRadius": 8,
+            "borderTopLeftRadius": 8,
+            "borderTopRightRadius": 8,
+          },
+          {
+            "backgroundColor": "#fff",
+            "boxShadow": "0px 0px 20px rgba(0, 0, 0, 0.1)",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "display": "flex",
+              "flexDirection": "row",
+            },
+            {
+              "color": "#414141",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            {
+              "flexBasis": "0%",
+              "flexGrow": 1,
+              "flexShrink": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "rgb(107 114 128 / var(--tw-text-opacity, 1))",
+                "fontSize": 14,
+                "lineHeight": 20,
+              }
+            }
+          >
+            Total Treatments
+          </Text>
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginBottom": 8,
+                "marginTop": 8,
+              }
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "borderBottomLeftRadius": 9999,
+                    "borderBottomRightRadius": 9999,
+                    "borderTopLeftRadius": 9999,
+                    "borderTopRightRadius": 9999,
+                    "display": "flex",
+                    "height": 24,
+                    "justifyContent": "center",
+                    "marginRight": 4,
+                    "width": 24,
+                  },
+                  {
+                    "backgroundColor": "#E3F8DD",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  {
+                    "testUri": "../../../assets/images/line-chart.svg",
+                  }
+                }
+                style={
+                  {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+                tintColor="#66DA42"
+              />
+            </View>
+            <Text
+              style={
+                {
+                  "fontSize": 12,
+                }
+              }
+            >
+              +15%
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "fontWeight": "700",
+                },
+                {
+                  "fontSize": "30px",
+                },
+              ]
+            }
+          >
+            135
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderBottomLeftRadius": 9999,
+                  "borderBottomRightRadius": 9999,
+                  "borderTopLeftRadius": 9999,
+                  "borderTopRightRadius": 9999,
+                  "display": "flex",
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginRight": 4,
+                  "width": 64,
+                },
+                {
+                  "backgroundColor": "#E4F7F9",
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                {
+                  "testUri": "../../../assets/images/plaster.svg",
+                }
+              }
+              style={
+                {
+                  "height": 25,
+                  "width": 25,
+                }
+              }
+              tintColor="#578388"
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "marginBottom": 24,
+        "minWidth": 220,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "width": "33.333333%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderBottomLeftRadius": 8,
+            "borderBottomRightRadius": 8,
+            "borderTopLeftRadius": 8,
+            "borderTopRightRadius": 8,
+          },
+          {
+            "backgroundColor": "#fff",
+            "boxShadow": "0px 0px 20px rgba(0, 0, 0, 0.1)",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "display": "flex",
+              "flexDirection": "row",
+            },
+            {
+              "color": "#414141",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            {
+              "flexBasis": "0%",
+              "flexGrow": 1,
+              "flexShrink": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "rgb(107 114 128 / var(--tw-text-opacity, 1))",
+                "fontSize": 14,
+                "lineHeight": 20,
+              }
+            }
+          >
+            Total Consents
+          </Text>
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginBottom": 8,
+                "marginTop": 8,
+              }
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "borderBottomLeftRadius": 9999,
+                    "borderBottomRightRadius": 9999,
+                    "borderTopLeftRadius": 9999,
+                    "borderTopRightRadius": 9999,
+                    "display": "flex",
+                    "height": 24,
+                    "justifyContent": "center",
+                    "marginRight": 4,
+                    "width": 24,
+                  },
+                  {
+                    "backgroundColor": "#E3F8DD",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  {
+                    "testUri": "../../../assets/images/line-chart.svg",
+                  }
+                }
+                style={
+                  {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+                tintColor="#66DA42"
+              />
+            </View>
+            <Text
+              style={
+                {
+                  "fontSize": 12,
+                }
+              }
+            >
+              +15%
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "fontWeight": "700",
+                },
+                {
+                  "fontSize": "30px",
+                },
+              ]
+            }
+          >
+            135
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderBottomLeftRadius": 9999,
+                  "borderBottomRightRadius": 9999,
+                  "borderTopLeftRadius": 9999,
+                  "borderTopRightRadius": 9999,
+                  "display": "flex",
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginRight": 4,
+                  "width": 64,
+                },
+                {
+                  "backgroundColor": "#E4F7F9",
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                {
+                  "testUri": "../../../assets/images/paper-pen.svg",
+                }
+              }
+              style={
+                {
+                  "height": 25,
+                  "width": 25,
+                }
+              }
+              tintColor="#578388"
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "marginBottom": 24,
+        "minWidth": 220,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "width": "33.333333%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderBottomLeftRadius": 8,
+            "borderBottomRightRadius": 8,
+            "borderTopLeftRadius": 8,
+            "borderTopRightRadius": 8,
+          },
+          {
+            "backgroundColor": "#fff",
+            "boxShadow": "0px 0px 20px rgba(0, 0, 0, 0.1)",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "display": "flex",
+              "flexDirection": "row",
+            },
+            {
+              "color": "#414141",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            {
+              "flexBasis": "0%",
+              "flexGrow": 1,
+              "flexShrink": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "rgb(107 114 128 / var(--tw-text-opacity, 1))",
+                "fontSize": 14,
+                "lineHeight": 20,
+              }
+            }
+          >
+            Total Consents Signed
+          </Text>
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginBottom": 8,
+                "marginTop": 8,
+              }
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "borderBottomLeftRadius": 9999,
+                    "borderBottomRightRadius": 9999,
+                    "borderTopLeftRadius": 9999,
+                    "borderTopRightRadius": 9999,
+                    "display": "flex",
+                    "height": 24,
+                    "justifyContent": "center",
+                    "marginRight": 4,
+                    "width": 24,
+                  },
+                  {
+                    "backgroundColor": "#E3F8DD",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  {
+                    "testUri": "../../../assets/images/line-chart.svg",
+                  }
+                }
+                style={
+                  {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+                tintColor="#66DA42"
+              />
+            </View>
+            <Text
+              style={
+                {
+                  "fontSize": 12,
+                }
+              }
+            >
+              +15%
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "fontWeight": "700",
+                },
+                {
+                  "fontSize": "30px",
+                },
+              ]
+            }
+          >
+            2159
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderBottomLeftRadius": 9999,
+                  "borderBottomRightRadius": 9999,
+                  "borderTopLeftRadius": 9999,
+                  "borderTopRightRadius": 9999,
+                  "display": "flex",
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginRight": 4,
+                  "width": 64,
+                },
+                {
+                  "backgroundColor": "#E4F7F9",
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                {
+                  "testUri": "../../../assets/images/paper-pen.svg",
+                }
+              }
+              style={
+                {
+                  "height": 25,
+                  "width": 25,
+                }
+              }
+              tintColor="#578388"
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "marginBottom": 24,
+        "minWidth": 220,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "width": "33.333333%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderBottomLeftRadius": 8,
+            "borderBottomRightRadius": 8,
+            "borderTopLeftRadius": 8,
+            "borderTopRightRadius": 8,
+          },
+          {
+            "backgroundColor": "#fff",
+            "boxShadow": "0px 0px 20px rgba(0, 0, 0, 0.1)",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "display": "flex",
+              "flexDirection": "row",
+            },
+            {
+              "color": "#414141",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            {
+              "flexBasis": "0%",
+              "flexGrow": 1,
+              "flexShrink": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "rgb(107 114 128 / var(--tw-text-opacity, 1))",
+                "fontSize": 14,
+                "lineHeight": 20,
+              }
+            }
+          >
+            Total Fact Sheets Read
+          </Text>
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginBottom": 8,
+                "marginTop": 8,
+              }
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "borderBottomLeftRadius": 9999,
+                    "borderBottomRightRadius": 9999,
+                    "borderTopLeftRadius": 9999,
+                    "borderTopRightRadius": 9999,
+                    "display": "flex",
+                    "height": 24,
+                    "justifyContent": "center",
+                    "marginRight": 4,
+                    "width": 24,
+                  },
+                  {
+                    "backgroundColor": "#E3F8DD",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={
+                  {
+                    "testUri": "../../../assets/images/line-chart.svg",
+                  }
+                }
+                style={
+                  {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+                tintColor="#66DA42"
+              />
+            </View>
+            <Text
+              style={
+                {
+                  "fontSize": 12,
+                }
+              }
+            >
+              +15%
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "fontWeight": "700",
+                },
+                {
+                  "fontSize": "30px",
+                },
+              ]
+            }
+          >
+            2159
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderBottomLeftRadius": 9999,
+                  "borderBottomRightRadius": 9999,
+                  "borderTopLeftRadius": 9999,
+                  "borderTopRightRadius": 9999,
+                  "display": "flex",
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginRight": 4,
+                  "width": 64,
+                },
+                {
+                  "backgroundColor": "#E4F7F9",
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                {
+                  "testUri": "../../../assets/images/bulb.svg",
+                }
+              }
+              style={
+                {
+                  "height": 25,
+                  "width": 25,
+                }
+              }
+              tintColor="#578388"
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`DashboardWidgets renders correctly with empty data 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "marginLeft": -12,
+      "marginRight": -12,
+    }
+  }
+/>
+`;

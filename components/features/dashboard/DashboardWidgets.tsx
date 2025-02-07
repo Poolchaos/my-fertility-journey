@@ -1,32 +1,22 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
+import { WidgetData } from './dashboardWidgets.data';
 import { UseEnvironment } from '../../../utils/environmentUtils';
 import WidgetWrapper from '../../ui/WidgetWrapper';
-
 import LineChartIcon from '../../../assets/images/line-chart.svg';
-import StethoscopeIcon from '../../../assets/images/stethoscope.svg';
-import TrolleyIcon from '../../../assets/images/trolley.svg';
-import PlasterIcon from '../../../assets/images/plaster.svg';
-import PaperPenIcon from '../../../assets/images/paper-pen.svg';
-import BulbIcon from '../../../assets/images/bulb.svg';
 
-const data = [
-  { name: 'Total Practices', count: 11, icon: StethoscopeIcon },
-  { name: 'Total Subscribers', count: 261, icon: TrolleyIcon },
-  { name: 'Total Treatments', count: 135, icon: PlasterIcon },
-  { name: 'Total Consents', count: 135, icon: PaperPenIcon },
-  { name: 'Total Consents Signed', count: 2159, icon: PaperPenIcon },
-  { name: 'Total Fact Sheets Read', count: 2159, icon: BulbIcon },
-];
+interface DashboardWidgetsProps {
+  data: WidgetData[];
+}
 
-const DashboardWidgets: React.FC = () => {
+const DashboardWidgets: React.FC<DashboardWidgetsProps> = ({ data }) => {
   const { tailwind } = UseEnvironment();
 
   return (
     <View style={tailwind('flex flex-row flex-wrap -mx-3')}>
-      {data.map((item, index) => (
+      {data.map((item) => (
         <View
-          key={index}
+          key={item.name}
           style={{ ...tailwind('w-1/3 px-3 mb-6'), minWidth: 220 }}
         >
           <WidgetWrapper style={tailwind('p-4')}>
@@ -41,18 +31,19 @@ const DashboardWidgets: React.FC = () => {
                       tailwind(
                         'rounded-full w-24 h-24 flex items-center justify-center mr-1'
                       ),
-                      {
-                        backgroundColor: '#E3F8DD',
-                      },
+                      { backgroundColor: item.iconBgColor },
                     ]}
                   >
                     <Image
                       source={LineChartIcon as any}
                       style={tailwind('w-12 h-12')}
-                      tintColor="#66DA42"
+                      tintColor={item.iconColor}
                     />
                   </View>
-                  <Text style={tailwind('text-xs')}>+15%</Text>
+                  <Text style={tailwind('text-xs')}>
+                    {item.changePercentage}
+                  </Text>{' '}
+                  {/* Use data */}
                 </View>
                 <Text style={[tailwind('font-bold'), { fontSize: '30px' }]}>
                   {item.count}
@@ -65,15 +56,13 @@ const DashboardWidgets: React.FC = () => {
                     tailwind(
                       'rounded-full w-64 h-64 flex items-center justify-center mr-1'
                     ),
-                    {
-                      backgroundColor: '#E4F7F9',
-                    },
+                    { backgroundColor: item.widgetBgColor },
                   ]}
                 >
                   <Image
-                    source={item.icon as any}
+                    source={item.widgetIcon as any}
                     style={tailwind('w-25 h-25')}
-                    tintColor="#578388"
+                    tintColor={item.widgetIconColor}
                   />
                 </View>
               </View>

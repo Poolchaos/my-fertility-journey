@@ -4,6 +4,7 @@ import DashboardWidgets from '../../components/features/dashboard/DashboardWidge
 import StatusOverview from '../../components/features/dashboard/StatusOverview';
 import NewestPracticesTable from '../../components/features/dashboard/NewestPracticesTable';
 import { UseEnvironment } from '../../utils/environmentUtils';
+import { dashboardWidgetsData } from '../../components/features/dashboard/dashboardWidgets.data';
 
 const Dashboard: React.FC = () => {
   const { tailwind } = UseEnvironment();
@@ -19,7 +20,7 @@ const Dashboard: React.FC = () => {
         </Text>
       </View>
 
-      <DashboardWidgets />
+      <DashboardWidgets data={dashboardWidgetsData} />
       <StatusOverview />
       <NewestPracticesTable />
     </ScrollView>

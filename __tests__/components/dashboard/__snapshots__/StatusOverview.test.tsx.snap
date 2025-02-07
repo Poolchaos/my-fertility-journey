@@ -1,0 +1,616 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusOverview Component matches snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "borderBottomLeftRadius": 8,
+        "borderBottomRightRadius": 8,
+        "borderTopLeftRadius": 8,
+        "borderTopRightRadius": 8,
+      },
+      {
+        "backgroundColor": "#fff",
+        "boxShadow": "0px 0px 20px rgba(0, 0, 0, 0.1)",
+      },
+      {
+        "marginBottom": 24,
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-start",
+        "marginLeft": -12,
+        "marginRight": -12,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "30%",
+          "flexDirection": "row",
+          "flexGrow": 1,
+          "justifyContent": "center",
+          "minWidth": 200,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+          }
+        }
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight={90}
+          bbWidth={90}
+          focusable={false}
+          height={90}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 90,
+                "width": 90,
+              },
+            ]
+          }
+          vbHeight={100}
+          vbWidth={100}
+          width={90}
+        >
+          <RNSVGGroup
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+          >
+            <RNSVGGroup
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              matrix={
+                [
+                  6.123233995736766e-17,
+                  -1,
+                  1,
+                  6.123233995736766e-17,
+                  0,
+                  100,
+                ]
+              }
+            >
+              <RNSVGCircle
+                cx="50"
+                cy="50"
+                fill={null}
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                  ]
+                }
+                r={40}
+                stroke={
+                  {
+                    "payload": 4293190884,
+                    "type": 0,
+                  }
+                }
+                strokeWidth={8}
+              />
+              <RNSVGCircle
+                cx="50"
+                cy="50"
+                fill={null}
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                    "strokeDasharray",
+                    "strokeDashoffset",
+                    "strokeLinecap",
+                  ]
+                }
+                r={40}
+                stroke={
+                  {
+                    "payload": 4294940267,
+                    "type": 0,
+                  }
+                }
+                strokeDasharray={
+                  [
+                    "251.32741228718345",
+                    "251.32741228718345",
+                  ]
+                }
+                strokeDashoffset={251.32741228718345}
+                strokeLinecap={1}
+                strokeWidth={8}
+              />
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGSvgView>
+        <Text
+          style={
+            [
+              {
+                "position": "absolute",
+              },
+              {
+                "top": 35,
+              },
+            ]
+          }
+        >
+          24
+          %
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "flexBasis": "0%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "marginLeft": 24,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 28,
+                "marginBottom": 4,
+                "textAlign": "left",
+              },
+              {
+                "color": "#414141",
+              },
+            ]
+          }
+        >
+          24
+          %
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "rgb(107 114 128 / var(--tw-text-opacity, 1))",
+                "fontSize": 14,
+                "lineHeight": 20,
+                "textAlign": "left",
+              },
+              {
+                "color": "#747474",
+              },
+            ]
+          }
+        >
+          Pending
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "30%",
+          "flexDirection": "row",
+          "flexGrow": 1,
+          "justifyContent": "center",
+          "minWidth": 200,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+          }
+        }
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight={90}
+          bbWidth={90}
+          focusable={false}
+          height={90}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 90,
+                "width": 90,
+              },
+            ]
+          }
+          vbHeight={100}
+          vbWidth={100}
+          width={90}
+        >
+          <RNSVGGroup
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+          >
+            <RNSVGGroup
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              matrix={
+                [
+                  6.123233995736766e-17,
+                  -1,
+                  1,
+                  6.123233995736766e-17,
+                  0,
+                  100,
+                ]
+              }
+            >
+              <RNSVGCircle
+                cx="50"
+                cy="50"
+                fill={null}
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                  ]
+                }
+                r={40}
+                stroke={
+                  {
+                    "payload": 4293190884,
+                    "type": 0,
+                  }
+                }
+                strokeWidth={8}
+              />
+              <RNSVGCircle
+                cx="50"
+                cy="50"
+                fill={null}
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                    "strokeDasharray",
+                    "strokeDashoffset",
+                    "strokeLinecap",
+                  ]
+                }
+                r={40}
+                stroke={
+                  {
+                    "payload": 4283749932,
+                    "type": 0,
+                  }
+                }
+                strokeDasharray={
+                  [
+                    "251.32741228718345",
+                    "251.32741228718345",
+                  ]
+                }
+                strokeDashoffset={251.32741228718345}
+                strokeLinecap={1}
+                strokeWidth={8}
+              />
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGSvgView>
+        <Text
+          style={
+            [
+              {
+                "position": "absolute",
+              },
+              {
+                "top": 35,
+              },
+            ]
+          }
+        >
+          56
+          %
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "flexBasis": "0%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "marginLeft": 24,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 28,
+                "marginBottom": 4,
+                "textAlign": "left",
+              },
+              {
+                "color": "#414141",
+              },
+            ]
+          }
+        >
+          56
+          %
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "rgb(107 114 128 / var(--tw-text-opacity, 1))",
+                "fontSize": 14,
+                "lineHeight": 20,
+                "textAlign": "left",
+              },
+              {
+                "color": "#747474",
+              },
+            ]
+          }
+        >
+          Registered
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "30%",
+          "flexDirection": "row",
+          "flexGrow": 1,
+          "justifyContent": "center",
+          "minWidth": 200,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+          }
+        }
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight={90}
+          bbWidth={90}
+          focusable={false}
+          height={90}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 90,
+                "width": 90,
+              },
+            ]
+          }
+          vbHeight={100}
+          vbWidth={100}
+          width={90}
+        >
+          <RNSVGGroup
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+          >
+            <RNSVGGroup
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              matrix={
+                [
+                  6.123233995736766e-17,
+                  -1,
+                  1,
+                  6.123233995736766e-17,
+                  0,
+                  100,
+                ]
+              }
+            >
+              <RNSVGCircle
+                cx="50"
+                cy="50"
+                fill={null}
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                  ]
+                }
+                r={40}
+                stroke={
+                  {
+                    "payload": 4293190884,
+                    "type": 0,
+                  }
+                }
+                strokeWidth={8}
+              />
+              <RNSVGCircle
+                cx="50"
+                cy="50"
+                fill={null}
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                    "strokeDasharray",
+                    "strokeDashoffset",
+                    "strokeLinecap",
+                  ]
+                }
+                r={40}
+                stroke={
+                  {
+                    "payload": 4279800063,
+                    "type": 0,
+                  }
+                }
+                strokeDasharray={
+                  [
+                    "251.32741228718345",
+                    "251.32741228718345",
+                  ]
+                }
+                strokeDashoffset={251.32741228718345}
+                strokeLinecap={1}
+                strokeWidth={8}
+              />
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGSvgView>
+        <Text
+          style={
+            [
+              {
+                "position": "absolute",
+              },
+              {
+                "top": 35,
+              },
+            ]
+          }
+        >
+          20
+          %
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "flexBasis": "0%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "marginLeft": 24,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 28,
+                "marginBottom": 4,
+                "textAlign": "left",
+              },
+              {
+                "color": "#414141",
+              },
+            ]
+          }
+        >
+          20
+          %
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "rgb(107 114 128 / var(--tw-text-opacity, 1))",
+                "fontSize": 14,
+                "lineHeight": 20,
+                "textAlign": "left",
+              },
+              {
+                "color": "#747474",
+              },
+            ]
+          }
+        >
+          Post Treatment
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -7,8 +7,6 @@ import ProfileDropdown from '../features/ProfileDropdown';
 import { getStyle } from '../../styles/styles';
 import { useDropdown } from '../../context/DropdownProvider';
 
-FontAwesome5.defaultProps.solid = true;
-
 const Navbar: React.FC = () => {
   const { environment, tailwind } = UseEnvironment();
   const { activeDropdown, toggleDropdown } = useDropdown();
@@ -27,10 +25,11 @@ const Navbar: React.FC = () => {
         ]}
       >
         <TouchableOpacity
+          testID="bell-icon"
           onPress={() => toggleDropdown('notifications')}
           style={[tailwind('relative mr-4'), { zIndex: 51 }]}
         >
-          <FontAwesome5 name="bell" size={15} color="#9d9d9d" />
+          <FontAwesome5 name="bell" size={15} color="#9d9d9d" solid />
           <View
             style={[
               tailwind(
@@ -52,7 +51,12 @@ const Navbar: React.FC = () => {
         {activeDropdown === 'notifications' && <NotificationDropdown />}
       </View>
 
-      <ProfileDropdown />
+      <TouchableOpacity
+        testID="profile-icon"
+        onPress={() => toggleDropdown('profile')}
+      >
+        <ProfileDropdown />
+      </TouchableOpacity>
     </View>
   );
 };

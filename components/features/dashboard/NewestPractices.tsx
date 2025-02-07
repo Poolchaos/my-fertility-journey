@@ -18,9 +18,9 @@ import { UseEnvironment } from '../../../utils/environmentUtils';
 
 interface NewestPracticesProps {
   data: PracticeData[];
-  onToggleStatus: (index: number) => void;
-  onEdit: (index: number) => void;
-  onDelete: (index: number) => void;
+  onToggleStatus: (id: string) => void;
+  onEdit: (id: string) => void;
+  onDelete: (id: string) => void;
 }
 
 const NewestPractices: React.FC<NewestPracticesProps> = ({
@@ -62,7 +62,7 @@ const NewestPractices: React.FC<NewestPracticesProps> = ({
 
       {data.map((row, index) => (
         <Row
-          key={index}
+          key={row.id || `row-${index}`} // ✅ Use unique `id` or fallback to index
           data={[
             row.name,
             row.phone,
@@ -70,16 +70,18 @@ const NewestPractices: React.FC<NewestPracticesProps> = ({
             row.date,
             <View style={tailwind('items-start')}>
               <Switch
+                testID={`toggle-switch-${row.id || index}`}
                 value={row.active}
-                onValueChange={() => onToggleStatus(index)}
+                onValueChange={() => onToggleStatus(row.id || index.toString())}
                 trackColor={{ false: '#ccc', true: '#67adb9' }}
                 thumbColor={'#fff'}
               />
             </View>,
             <View style={tailwind('flex-row justify-end')}>
               <TouchableOpacity
+                testID={`edit-button-${row.id || index}`}
                 style={tailwind('mr-3')}
-                onPress={() => onEdit(index)}
+                onPress={() => onEdit(row.id || index.toString())}
               >
                 <Image
                   source={PencilIcon as any}
@@ -88,7 +90,10 @@ const NewestPractices: React.FC<NewestPracticesProps> = ({
                 />
               </TouchableOpacity>
 
-              <TouchableOpacity onPress={() => onDelete(index)}>
+              <TouchableOpacity
+                testID={`delete-button-${row.id || index}`}
+                onPress={() => onDelete(row.id || index.toString())}
+              >
                 <Image
                   source={TrashIcon as any}
                   style={{ width: 14, height: 14 }}
@@ -109,11 +114,11 @@ const NewestPractices: React.FC<NewestPracticesProps> = ({
     <View style={tailwind('flex flex-wrap justify-start flex-row')}>
       {data.map((row, index) => (
         <CardView
-          key={index}
+          key={row.id || `card-${index}`}
           row={row}
-          toggleStatus={() => onToggleStatus(index)}
-          onEdit={() => onEdit(index)}
-          onDelete={() => onDelete(index)}
+          toggleStatus={() => onToggleStatus(row.id || index.toString())}
+          onEdit={() => onEdit(row.id || index.toString())}
+          onDelete={() => onDelete(row.id || index.toString())}
         />
       ))}
     </View>
@@ -125,7 +130,10 @@ const NewestPractices: React.FC<NewestPracticesProps> = ({
         Newest Practices
       </Text>
       {isMobileView ? renderCards() : renderTable()}
-      <TouchableOpacity style={tailwind('my-4 self-end flex flex-row mr-4')}>
+      <TouchableOpacity
+        testID="see-all-button"
+        style={tailwind('my-4 self-end flex flex-row mr-4')}
+      >
         <Text style={[tailwind('text-blue-500'), { color: '#67adb9' }]}>
           See All
         </Text>

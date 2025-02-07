@@ -16,7 +16,7 @@ const RootLayout: React.FC = () => {
         contentContainerStyle={tailwind('flex-1')}
         keyboardShouldPersistTaps="handled"
       >
-        <View style={[tailwind('p-4 flex-1 bg-customBackground')]}>
+        <View style={[tailwind('p-4 flex-1'), { backgroundColor: '#fafafa' }]}>
           <View
             style={[
               tailwind(`${activeDropdown ? 'opacity-0' : 'opacity-100'}`),

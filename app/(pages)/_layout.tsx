@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, SafeAreaView } from 'react-native';
 import { UseEnvironment } from '../../utils/environmentUtils';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/layout/Navbar';
 import { Slot } from 'expo-router';
 
 const RootLayout: React.FC = () => {

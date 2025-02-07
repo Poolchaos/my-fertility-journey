@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, TouchableOpacity, Image, View } from 'react-native';
-import { MenuItem } from './Sidebar.data';
+import { MenuItem } from '../../constants/Sidebar.data';
 import { UseEnvironment } from '../../utils/environmentUtils';
 
 interface Props {
@@ -20,7 +20,6 @@ const SidebarItem: React.FC<Props> = ({
   iconColor,
   isCollapsed,
 }) => {
-  // ✅ Ensure hooks are always called first
   const { tailwind } = UseEnvironment();
 
   return (

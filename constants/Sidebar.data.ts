@@ -1,8 +1,8 @@
-import HomeIcon from '../../assets/images/home.svg';
-import ProfileIcon from '../../assets/images/profile.svg';
-import UsersIcon from '../../assets/images/users.svg';
-import MedicalIcon from '../../assets/images/medical-briefcase.svg';
-import DocumentIcon from '../../assets/images/document.svg';
+import HomeIcon from '../assets/images/home.svg';
+import ProfileIcon from '../assets/images/profile.svg';
+import UsersIcon from '../assets/images/users.svg';
+import MedicalIcon from '../assets/images/medical-briefcase.svg';
+import DocumentIcon from '../assets/images/document.svg';
 
 export interface MenuItem {
   name: string;

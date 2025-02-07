@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-import { UseEnvironment } from '../utils/environmentUtils';
-import WidgetWrapper from './WidgetWrapper';
+import { UseEnvironment } from '../../../utils/environmentUtils';
+import WidgetWrapper from '../../ui/WidgetWrapper';
 
-import LineChartIcon from '../assets/images/line-chart.svg';
-import StethoscopeIcon from '../assets/images/stethoscope.svg';
-import TrolleyIcon from '../assets/images/trolley.svg';
-import PlasterIcon from '../assets/images/plaster.svg';
-import PaperPenIcon from '../assets/images/paper-pen.svg';
-import BulbIcon from '../assets/images/bulb.svg';
+import LineChartIcon from '../../../assets/images/line-chart.svg';
+import StethoscopeIcon from '../../../assets/images/stethoscope.svg';
+import TrolleyIcon from '../../../assets/images/trolley.svg';
+import PlasterIcon from '../../../assets/images/plaster.svg';
+import PaperPenIcon from '../../../assets/images/paper-pen.svg';
+import BulbIcon from '../../../assets/images/bulb.svg';
 
 const data = [
   { name: 'Total Practices', count: 11, icon: StethoscopeIcon },
@@ -27,7 +27,7 @@ const DashboardWidgets: React.FC = () => {
       {data.map((item, index) => (
         <View
           key={index}
-          style={{ ...tailwind('w-1/3 px-3 mb-6'), minWidth: 220 }} // ✅ Ensures each item has min-width 220px
+          style={{ ...tailwind('w-1/3 px-3 mb-6'), minWidth: 220 }}
         >
           <WidgetWrapper style={tailwind('p-4')}>
             <View style={[tailwind('flex flex-row'), { color: '#414141' }]}>

@@ -1,4 +1,4 @@
-import { UseEnvironment } from '../../utils/environmentUtils';
+import { UseEnvironment } from '../utils/environmentUtils';
 
 const removeOpacity = (colorString: string | undefined) => {
   if (

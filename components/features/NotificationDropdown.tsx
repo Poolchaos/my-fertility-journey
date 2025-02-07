@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
-import { UseEnvironment } from '../utils/environmentUtils';
-import DropdownWrapper from './DropdownWrapper';
-import mockNotifications from '../app/mocks/notifications';
-import trashIcon from '../assets/images/trash.svg';
+import { UseEnvironment } from '../../utils/environmentUtils';
+import DropdownWrapper from '../ui/DropdownWrapper';
+import mockNotifications from '../../constants/notifications';
+import trashIcon from '../../assets/images/trash.svg';
 
 const NotificationDropdown: React.FC = () => {
   const { tailwind } = UseEnvironment();

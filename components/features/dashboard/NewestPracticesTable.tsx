@@ -8,12 +8,12 @@ import {
   Switch,
 } from 'react-native';
 import { Row } from 'react-native-table-component';
-import { UseEnvironment } from '../utils/environmentUtils';
-import WidgetWrapper from './WidgetWrapper';
-import { CardView } from './layout/CardView';
-import caretRight from '../assets/images/caret-right.svg';
-import PencilIcon from '../assets/images/pencil.svg';
-import TrashIcon from '../assets/images/trash.svg';
+import { UseEnvironment } from '../../../utils/environmentUtils';
+import WidgetWrapper from '../../ui/WidgetWrapper';
+import { CardView } from './CardView';
+import caretRight from '../../../assets/images/caret-right.svg';
+import PencilIcon from '../../../assets/images/pencil.svg';
+import TrashIcon from '../../../assets/images/trash.svg';
 
 const tableData = [
   {
@@ -57,9 +57,8 @@ const NewestPracticesTable: React.FC = () => {
       <Text style={tailwind('text-lg font-bold px-4 pt-4')}>
         Newest Practices
       </Text>
-
       {isMobileView ? (
-        <View style={tailwind('flex flex-wrap justify-between gap-x-4')}>
+        <View style={tailwind('flex flex-wrap justify-start flex-row')}>
           {data.map((row, index) => (
             <CardView
               key={index}
@@ -136,7 +135,6 @@ const NewestPracticesTable: React.FC = () => {
         </View>
       )}
 
-      {/* "See All" Button */}
       <TouchableOpacity style={tailwind('my-4 self-end flex flex-row mr-4')}>
         <Text style={[tailwind('text-blue-500'), { color: '#67adb9' }]}>
           See All

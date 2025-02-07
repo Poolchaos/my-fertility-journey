@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useWindowDimensions } from 'react-native';
-import { breakpoints } from '../constants/breakpoints';
+import { breakpoints } from '../constants/Breakpoints';
 
 const useSidebarState = () => {
   const { width } = useWindowDimensions();

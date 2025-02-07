@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import PieChart from './PieChart';
-import { UseEnvironment } from '../utils/environmentUtils';
-import WidgetWrapper from './WidgetWrapper'; // ✅ Import wrapper
+import PieChart from '../../ui/PieChart';
+import { UseEnvironment } from '../../../utils/environmentUtils';
+import WidgetWrapper from '../../ui/WidgetWrapper';
 
 const statusData = [
   { percentage: 24, label: 'Pending', color: '#FF966B' },

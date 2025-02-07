@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { UseEnvironment } from '../utils/environmentUtils';
+import { UseEnvironment } from '../../utils/environmentUtils';
 import { Style } from 'tailwind-rn';
 
 const WidgetWrapper: React.FC<{

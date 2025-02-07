@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { Svg, Circle, G } from 'react-native-svg';
-import { UseEnvironment } from '../utils/environmentUtils';
+import { UseEnvironment } from '../../utils/environmentUtils';
 
 interface PieChartProps {
   percentage: number;
@@ -27,7 +27,6 @@ const PieChart: React.FC<PieChartProps> = ({ percentage, color }) => {
             strokeWidth={strokeWidth}
             fill="none"
           />
-          {/* Progress Circle */}
           <Circle
             cx="50"
             cy="50"
@@ -41,7 +40,6 @@ const PieChart: React.FC<PieChartProps> = ({ percentage, color }) => {
           />
         </G>
       </Svg>
-      {/* Percentage Label */}
       <Text style={[tailwind('absolute'), { top: 35 }]}>{percentage}%</Text>
     </View>
   );

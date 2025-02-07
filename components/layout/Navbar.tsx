@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, TouchableOpacity, Text } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
-import { UseEnvironment } from '../utils/environmentUtils';
-import NotificationDropdown from './NotificationDropdown';
-import ProfileDropdown from './ProfileDropdown';
-import { getStyle } from './layout/styles';
-import { useDropdown } from '../context/DropdownProvider';
+import { UseEnvironment } from '../../utils/environmentUtils';
+import NotificationDropdown from '../features/NotificationDropdown';
+import ProfileDropdown from '../features/ProfileDropdown';
+import { getStyle } from '../../styles/styles';
+import { useDropdown } from '../../context/DropdownProvider';
 
 FontAwesome5.defaultProps.solid = true;
 
@@ -20,7 +20,6 @@ const Navbar: React.FC = () => {
         { backgroundColor: getStyle('bg-white') },
       ]}
     >
-      {/* Notifications */}
       <View
         style={[
           tailwind('z-50'),
@@ -32,7 +31,6 @@ const Navbar: React.FC = () => {
           style={[tailwind('relative mr-4'), { zIndex: 51 }]}
         >
           <FontAwesome5 name="bell" size={15} color="#9d9d9d" />
-          {/* Notification Badge */}
           <View
             style={[
               tailwind(
@@ -54,7 +52,6 @@ const Navbar: React.FC = () => {
         {activeDropdown === 'notifications' && <NotificationDropdown />}
       </View>
 
-      {/* Profile Dropdown */}
       <ProfileDropdown />
     </View>
   );

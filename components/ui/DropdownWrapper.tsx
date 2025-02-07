@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
-import { UseEnvironment } from '../utils/environmentUtils';
-import { getStyle } from './layout/styles';
+import { UseEnvironment } from '../../utils/environmentUtils';
+import { getStyle } from '../../styles/styles';
 
 interface DropdownWrapperProps {
   children: React.ReactNode;

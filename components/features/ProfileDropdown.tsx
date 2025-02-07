@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
-import { UseEnvironment } from '../utils/environmentUtils';
-import mockUser from '../app/mocks/user';
-import { getStyle } from './layout/styles';
-import CaretUp from '../assets/images/caret-up.svg';
-import CaretDown from '../assets/images/caret-down.svg';
-import DropdownWrapper from './DropdownWrapper';
-import { useDropdown } from '../context/DropdownProvider';
+import { UseEnvironment } from '../../utils/environmentUtils';
+import mockUser from '../../constants/user';
+import { getStyle } from '../../styles/styles';
+import CaretUp from '../../assets/images/caret-up.svg';
+import CaretDown from '../../assets/images/caret-down.svg';
+import DropdownWrapper from '../ui/DropdownWrapper';
+import { useDropdown } from '../../context/DropdownProvider';
 
 interface User {
   initials: string;

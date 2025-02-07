@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image, Text } from 'react-native';
 import SidebarItem from './SidebarItem';
-import { menuItemsData } from '../../constants/Sidebar.data'; // Removed MenuItem
+import { menuItemsData } from '../../constants/Sidebar.data';
 import { UseEnvironment } from '../../utils/environmentUtils';
 import { useRouter, usePathname } from 'expo-router';
 import { getCustomStyles } from '../../styles/styles';

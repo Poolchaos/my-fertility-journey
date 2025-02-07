@@ -15,6 +15,7 @@ module.exports = {
         customBorder: '#e5e8eb',
         red500: '#ef4444',
         white: '#ffffff',
+        black: '#000000',
       },
       borderColor: (theme) => ({
         ...theme('colors'),
@@ -48,6 +49,12 @@ module.exports = {
         88: '88px',
         100: '100px',
         280: '280px',
+        '1/3': '33.333333%',
+        '2/3': '66.666667%',
+        '1/4': '25%',
+        '3/4': '75%',
+        '1/2': '50%',
+        full: '100%',
       },
       spacing: {
         5: '5px',
@@ -75,6 +82,11 @@ module.exports = {
         scroll: 'scroll',
         auto: 'auto',
       },
+      opacity: {
+        0: '0',
+        50: '0.5',
+        100: '1',
+      },
     },
   },
   corePlugins: {
@@ -82,9 +94,8 @@ module.exports = {
     ringColor: false,
     ringOffsetWidth: false,
     ringOffsetColor: false,
-    ringOpacity: false,
+    ringOpacity: true,
     boxShadow: false,
-    opacity: false,
     preflight: false,
   },
   safelist: [
@@ -105,6 +116,12 @@ module.exports = {
     },
     {
       pattern: /bg-.*/,
+    },
+    {
+      pattern: /absolute|inset-0|opacity-50/,
+    },
+    {
+      pattern: /absolute|inset-0|opacity-(0|50|100)/,
     },
   ],
 };

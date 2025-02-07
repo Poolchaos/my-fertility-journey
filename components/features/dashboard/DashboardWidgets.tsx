@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-import { WidgetData } from './dashboardWidgets.data';
 import { UseEnvironment } from '../../../utils/environmentUtils';
 import WidgetWrapper from '../../ui/WidgetWrapper';
+import { WidgetData } from './dashboardWidgets.data';
 import LineChartIcon from '../../../assets/images/line-chart.svg';
 
 interface DashboardWidgetsProps {

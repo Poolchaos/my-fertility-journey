@@ -13,9 +13,16 @@ interface CardProps {
     active: boolean;
   };
   toggleStatus: () => void;
+  onEdit: () => void;
+  onDelete: () => void;
 }
 
-export const CardView: React.FC<CardProps> = ({ row, toggleStatus }) => {
+export const CardView: React.FC<CardProps> = ({
+  row,
+  toggleStatus,
+  onEdit,
+  onDelete,
+}) => {
   const { tailwind } = UseEnvironment();
 
   return (
@@ -40,14 +47,14 @@ export const CardView: React.FC<CardProps> = ({ row, toggleStatus }) => {
         </View>
 
         <View style={tailwind('flex-row')}>
-          <TouchableOpacity style={tailwind('mr-3')}>
+          <TouchableOpacity style={tailwind('mr-3')} onPress={onEdit}>
             <Image
               source={PencilIcon as any}
               style={{ width: 14, height: 14 }}
               tintColor="#67adb9"
             />
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={onDelete}>
             <Image
               source={DeleteIcon as any}
               style={{ width: 14, height: 14 }}

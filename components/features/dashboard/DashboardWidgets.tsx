@@ -42,8 +42,7 @@ const DashboardWidgets: React.FC<DashboardWidgetsProps> = ({ data }) => {
                   </View>
                   <Text style={tailwind('text-xs')}>
                     {item.changePercentage}
-                  </Text>{' '}
-                  {/* Use data */}
+                  </Text>
                 </View>
                 <Text style={[tailwind('font-bold'), { fontSize: '30px' }]}>
                   {item.count}

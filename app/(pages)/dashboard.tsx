@@ -11,19 +11,23 @@ const Dashboard: React.FC = () => {
   const { tailwind } = UseEnvironment();
   const [practices, setPractices] = useState(newestPracticesData);
 
-  const handleToggleStatus = (index: number) => {
-    const updatedPractices = [...practices];
-    updatedPractices[index].active = !updatedPractices[index].active;
-    setPractices(updatedPractices);
+  const handleToggleStatus = (id: string) => {
+    setPractices((prev) =>
+      prev.map((practice) =>
+        practice.id === id
+          ? { ...practice, active: !practice.active }
+          : practice
+      )
+    );
   };
 
-  const handleEdit = (index: number) => {
-    console.log('Edit clicked for index:', index);
+  const handleEdit = (id: string) => {
+    console.log(`Editing practice with ID: ${id}`);
   };
 
-  const handleDelete = (index: number) => {
-    const updatedPractices = practices.filter((_, i) => i !== index);
-    setPractices(updatedPractices);
+  const handleDelete = (id: string) => {
+    setPractices((prev) => prev.filter((practice) => practice.id !== id));
+    console.log(`Deleted practice with ID: ${id}`);
   };
 
   return (

@@ -1,7 +1,7 @@
 import { useWindowDimensions, Appearance } from 'react-native';
 import { create } from 'tailwind-rn';
 import utilities from '../tailwind.json';
-import { breakpoints } from '../constants/Breakpoints';
+import { breakpoints } from '../constants/breakpoints';
 
 export const UseEnvironment = () => {
   const dimensions = useWindowDimensions();

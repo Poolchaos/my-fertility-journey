@@ -49,9 +49,9 @@ To install and run **My Fertility Journey** locally, follow these steps:
 
 5. **Run on different platforms:**
 
-   - **Android:** `npm run android`
+   - **Android:** `npm run android` (untested)
    - **iOS:** `npm run ios` (untested)
-   - **Web:** `npm run web` (untested)
+   - **Web:** `npm run web` <http://localhost:8081/dashboard>
 
 ---
 
